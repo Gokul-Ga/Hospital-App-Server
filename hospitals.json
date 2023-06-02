@@ -9,7 +9,7 @@
     {
       "id": 2,
       "name": "Rajagiri Hospital",
-      "patientCount": 250,
+      "patientCount": 280,
       "location": "Kochi"
     },
     {
@@ -21,8 +21,8 @@
     {
       "id": 4,
       "name": "NIMS",
-      "patientCount": 251,
-      "location": "TVM"
+      "patientCount": 280,
+      "location": "Trivandrum"
     },
     {
       "id": 5,

@@ -1,10 +1,7 @@
 const express = require('express');
 const fs = require('fs');
-
 const app = express();
-const port = 3000;
-
-// Middleware to parse JSON body
+const port = 5000;
 app.use(express.json());
 
 // Read hospitals data from JSON file
@@ -17,8 +14,6 @@ function getHospitals() {
 function saveHospitals(hospitals) {
   fs.writeFileSync('hospitals.json', JSON.stringify(hospitals, null, 2));
 }
-
-// Redirect root path to "/hospitals" endpoint
 app.get('/', (req, res) => {
   res.redirect('/hospitals');
 });
