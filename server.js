@@ -44,10 +44,18 @@ app.get('/hospitals/:id', (req, res) => {
 app.post('/hospitals', (req, res) => {
   const hospitals = getHospitals();
   const newHospital = req.body;
+
+  // Check if a hospital with the same ID already exists
+  const existingHospital = hospitals.hospitals.find((h) => h.id === newHospital.id);
+  if (existingHospital) {
+    return res.status(400).json({ error: 'Hospital with the same ID already exists' });
+  }
+
   hospitals.hospitals.push(newHospital);
   saveHospitals(hospitals);
   res.status(201).json(newHospital);
 });
+
 
 // Update a hospital
 app.put('/hospitals/:id', (req, res) => {

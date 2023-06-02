@@ -2,27 +2,33 @@
   "hospitals": [
     {
       "id": 1,
-      "name": "",
-      "patientCount": 560,
-      "location": "London"
+      "name": "KIMS Hospital",
+      "patientCount": 450,
+      "location": "Trivandrum"
     },
     {
       "id": 2,
-      "name": "Hospital B",
-      "patientCount": 50,
-      "location": "City B"
+      "name": "Rajagiri Hospital",
+      "patientCount": 250,
+      "location": "Kochi"
     },
     {
       "id": 3,
-      "name": "New Hospital",
-      "patientCount": 50,
-      "location": "New York"
+      "name": "Holy Cross Super Speciality Hospital",
+      "patientCount": 200,
+      "location": "Kollam"
     },
     {
       "id": 4,
       "name": "NIMS",
       "patientCount": 251,
       "location": "TVM"
+    },
+    {
+      "id": 5,
+      "name": "Amritha Hospital",
+      "patientCount": 550,
+      "location": "Kochi"
     }
   ]
 }
