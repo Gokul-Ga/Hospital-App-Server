@@ -1,0 +1,28 @@
+{
+  "hospitals": [
+    {
+      "id": 1,
+      "name": "",
+      "patientCount": 560,
+      "location": "London"
+    },
+    {
+      "id": 2,
+      "name": "Hospital B",
+      "patientCount": 50,
+      "location": "City B"
+    },
+    {
+      "id": 3,
+      "name": "New Hospital",
+      "patientCount": 50,
+      "location": "New York"
+    },
+    {
+      "id": 4,
+      "name": "NIMS",
+      "patientCount": 251,
+      "location": "TVM"
+    }
+  ]
+}
