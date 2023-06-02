@@ -40,7 +40,7 @@ app.post('/hospitals', (req, res) => {
   const hospitals = getHospitals();
   const newHospital = req.body;
 
-  // Check if a hospital with the same ID already exists
+  // To Check if a hospital with the same ID already exists
   const existingHospital = hospitals.hospitals.find((h) => h.id === newHospital.id);
   if (existingHospital) {
     return res.status(400).json({ error: 'Hospital with the same ID already exists' });
